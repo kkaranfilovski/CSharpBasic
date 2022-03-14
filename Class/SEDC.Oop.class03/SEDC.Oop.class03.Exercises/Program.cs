@@ -105,6 +105,44 @@ namespace Class03.exercises.loops
             //    }
             //}
 
+            Console.WriteLine("========TASK 3==========");
+
+            Console.WriteLine("Enter a number");
+            string input = Console.ReadLine();
+
+            bool isValid = int.TryParse(input, out int num);
+
+            bool isActive = true;
+
+            while (isActive)
+            {
+                if (!isValid)
+                {
+                    continue;
+                }
+                else
+                {
+                    for(int i = 1; i <=num; i++)
+                    {
+                        if (i % 3 == 0 || i % 7 ==0)
+                        {
+                            continue;
+                        }
+                        else if(i == 100)
+                        {
+                            Console.WriteLine("The limit is reached");
+                            isActive = !isActive;
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine(i);
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 }
