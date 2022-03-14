@@ -1,105 +1,110 @@
-﻿//using System;
+﻿using System;
 
-//namespace SEDC.Oop.class03.Exercises
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-            //Console.WriteLine("=========EXERCISE 1 ============");
+namespace Class03.exercises.loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("=====TASK 1======!");
 
+            //bool isActive1 = true;
+            //bool isActive2 = true;
 
-            //while (true)
+            //while (isActive1)
             //{
-            //    Console.WriteLine("Enter a number");
+            //    Console.WriteLine("Enter number 1:");
             //    string input = Console.ReadLine();
-            //    bool isValidNumber = int.TryParse(input, out int num1);
 
-            //    if (!isValidNumber)
+            //    bool isValidNum = int.TryParse(input, out int num1);
+
+            //    if (!isValidNum)
             //    {
-            //        Console.WriteLine("Enter a valid number!");
             //        continue;
             //    }
-
-            //    int counter = 1;
-            //    while(counter <= num1)
+            //    else
             //    {
-            //        Console.WriteLine(counter);
-            //        counter++;
-            //    }
+            //        for (int i = 1; i <= num1; i++)
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+
+            //        isActive1 = !isActive1;
+
+            //        while (isActive2)
+            //        {
+            //            Console.WriteLine("Enter number 2:");
+            //            string input2 = Console.ReadLine();
+
+            //            bool isValidNum2 = int.TryParse(input2, out int num2);
+
+            //            if (!isValidNum2)
+            //            {
+            //                continue;
+            //            }
+            //            else
+            //            {
+            //                for (int i2 = num2; i2 >= 1; i2--)
+            //                {
+            //                    Console.WriteLine(i2);
+            //                }
+            //                isActive2 = !isActive2;
+            //            }
+            //        }
 
 
-            //Console.WriteLine("========EXERCISE 2 ===============");
-            //bool isActive = true;
-
-            //while (isActive)
-            //{
-            //    Console.WriteLine("Enter a number");
-            //    string input = Console.ReadLine();
-            //    bool isValidNumber = int.TryParse(input, out int num1);
-
-            //    if(!isValidNumber)
-            //    {
-            //        Console.WriteLine("Enter valid number");
-            //        continue;
-            //    }
-
-            //    int evenCounter = 2;
-            //    while(evenCounter <= num1)
-            //    {
-            //        Console.WriteLine(evenCounter);
-            //        evenCounter += 2;
-            //    }
-
-            //    Console.WriteLine("Enter another number");
-            //    string inputTwo = Console.ReadLine();
-            //    bool isValidNumberTwo = int.TryParse(inputTwo, out int num2);
-
-            //    if (!isValidNumberTwo)
-            //    {
-            //        Console.WriteLine("Enter valid number");
-            //        continue;
-            //    }
-
-            //    int oddCounter = 1;
-            //    while(oddCounter <= num2)
-            //    {
-            //        Console.WriteLine(oddCounter);
-            //        oddCounter += 2;
             //    }
             //}
 
-            //Console.WriteLine("===========EXERCISE 3===================");
+            //Console.WriteLine("=========TASK 2 =============");
 
-            //bool isActive = true;
+            //bool isActive1 = true;
+            //bool isActive2 = true;
 
-            //while (isActive)
+            //while (isActive1)
             //{
-            //    Console.WriteLine("Enter a number");
+            //    Console.WriteLine("Enter number 1:");
             //    string input = Console.ReadLine();
-            //    bool isValidNumber = int.TryParse(input, out int num1);
 
-            //    if (!isValidNumber)
+            //    bool isValidNum1 = int.TryParse(input, out int num1);
+
+            //    if (!isValidNum1)
             //    {
-            //        Console.WriteLine("Enter valid number");
+            //        Console.WriteLine("Invalid number. Try again");
             //        continue;
             //    }
-
-            //    int counter = 1;
-            //    while(counter <= num1)
+            //    else
             //    {
-            //        if (num1 % 3 == 0 && num1 % 7 == 0)
+            //        for (int i = 2; i <= num1; i += 2)
             //        {
-                        
+            //            Console.WriteLine(i);
             //        }
-            //        else
+            //        isActive1 = !isActive1;
+
+            //        while (isActive2)
             //        {
-            //            Console.WriteLine(counter);
-            //            counter++;
+            //            Console.WriteLine("Enter number 2:");
+            //            string input2 = Console.ReadLine();
+
+            //            bool isValidNum2 = int.TryParse(input2, out int num2);
+
+            //            if (!isValidNum2)
+            //            {
+            //                Console.WriteLine("Invalid number. Try Again!");
+            //                continue;
+            //            }
+            //            else
+            //            {
+            //                for (int j = 1; j <= num2; j += 2)
+            //                {
+            //                    Console.WriteLine(j);
+            //                }
+            //                isActive2 = !isActive2;
+            //            }
             //        }
             //    }
+            //}
 
-//            }
-//        }
-//    }
-//}
+        }
+    }
+}
