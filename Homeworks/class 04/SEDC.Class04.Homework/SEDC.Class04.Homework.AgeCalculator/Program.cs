@@ -15,10 +15,7 @@ namespace SEDC.Class04.Homework.AgeCalculator
             //Show the age of a user after he inputs a date
             //Note: take into consideration if the birthday is today, after or before today
 
-
-            bool isValid = true;
-
-            while (isValid)
+            while (true)
             {
 
                 Console.WriteLine("Enter your birthdate in this format: dd/MM/YYYY");
