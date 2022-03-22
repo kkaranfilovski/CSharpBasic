@@ -7,13 +7,7 @@ namespace SEDC.Oop.Class06.Task3
     {
         static void Main(string[] args)
         {
-            User[] users = new User[] {
-                new User("kristijan", "1111", 1234, 1000),
-                new User("ilija", "2222", 5555, 500),
-                new User("petko", "3333", 6666, 200)
-            };
-
-            ATM atm = new ATM(users);
+            ATM atm = new ATM();
             atm.Main();
         }
     }

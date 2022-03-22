@@ -9,14 +9,20 @@ namespace SEDC.Oop.Class06.Task3.models
     {
         public User[] Users { get; set; }
 
-        public ATM(User[] users)
-        {
-            Users = users;
-        }
+        //public ATM(User[] users)
+        //{
+        //    Users = users;
+        //}
 
         public void Main()
         {
-            StartMenu(Users);
+            User[] users = new User[] {
+                new User("kristijan", "1111", 1234, 1000),
+                new User("ilija", "2222", 5555, 500),
+                new User("petko", "3333", 6666, 200)
+            };
+
+            StartMenu(users);
         }
 
         private void StartMenu(User[] users)

@@ -9,7 +9,7 @@ namespace SEDC.Oop.Class06.Task3.services
     {
         public User[] Login(User[] users)
         {
-            ATM options = new ATM(users);
+            ATM options = new ATM();
 
             while (true)
             {
