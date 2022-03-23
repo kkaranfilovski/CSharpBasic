@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Oop.Class07.Exercises.App", "SEDC.Oop.Class07.Exercises.App\SEDC.Oop.Class07.Exercises.App.csproj", "{541739BE-673E-408C-A49C-5AE21ADE9354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Oop.Class07.Exercises.services", "SEDC.Oop.Class07.Exercises.services\SEDC.Oop.Class07.Exercises.services.csproj", "{270747BC-D08D-41D3-BCF5-163A01256A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{541739BE-673E-408C-A49C-5AE21ADE9354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541739BE-673E-408C-A49C-5AE21ADE9354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541739BE-673E-408C-A49C-5AE21ADE9354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541739BE-673E-408C-A49C-5AE21ADE9354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270747BC-D08D-41D3-BCF5-163A01256A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270747BC-D08D-41D3-BCF5-163A01256A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270747BC-D08D-41D3-BCF5-163A01256A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270747BC-D08D-41D3-BCF5-163A01256A44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {245F62C8-65BC-4360-9119-F8F47A7EC6D9}
+	EndGlobalSection
+EndGlobal
