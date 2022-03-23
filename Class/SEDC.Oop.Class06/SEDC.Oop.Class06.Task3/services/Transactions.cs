@@ -11,6 +11,11 @@ namespace SEDC.Oop.Class06.Task3.services
         {
             while (true)
             {
+                if(user.Balance == 0)
+                {
+                    Console.WriteLine("You dont have any money to withdraw");
+                    break;
+                }
                 Console.WriteLine("Enter the ammount you want to withdraw:");
                 string input = Console.ReadLine();
                 bool isValid = int.TryParse(input, out int withdrawAmmount);

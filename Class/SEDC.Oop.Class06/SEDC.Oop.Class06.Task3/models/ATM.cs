@@ -8,12 +8,6 @@ namespace SEDC.Oop.Class06.Task3.models
     class ATM
     {
         public User[] Users { get; set; }
-
-        //public ATM(User[] users)
-        //{
-        //    Users = users;
-        //}
-
         public void Main()
         {
             User[] users = new User[] {
@@ -41,11 +35,11 @@ namespace SEDC.Oop.Class06.Task3.models
 
                 if (selection == "1")
                 {
-                    userServices.Login(users);
+                    users = userServices.Login(users);
                 }
                 else if (selection == "2")
                 {
-                    userServices.Register(users);
+                    users = userServices.Register(users);
                 }
                 else if (selection == "3")
                 {
