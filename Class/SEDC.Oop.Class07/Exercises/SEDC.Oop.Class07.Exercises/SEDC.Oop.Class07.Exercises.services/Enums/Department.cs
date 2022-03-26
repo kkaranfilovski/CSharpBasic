@@ -4,13 +4,11 @@ using System.Text;
 
 namespace SEDC.Oop.Class07.Exercises.services.Enums
 {
-    public enum Role
+    public enum Department
     {
-        Sales,
-        Manager,
-        Other,
-        CEO,
-        Contractor
-
+        finance,
+        marketing,
+        HR,
+        Development,
     }
 }

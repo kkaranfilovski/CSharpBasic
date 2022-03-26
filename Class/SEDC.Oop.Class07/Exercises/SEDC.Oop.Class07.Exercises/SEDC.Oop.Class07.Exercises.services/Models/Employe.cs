@@ -3,32 +3,27 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Oop.Class07.Exercises.services
+namespace SEDC.Oop.Class07.Exercises.services.Models
 {
     public class Employe
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int MyProperty { get; set; }
         public Role Role { get; set; }
         protected double Salary { get; set; }
 
         public void PrintInfo()
         {
-            Console.WriteLine($"{FirstName} {LastName} {GetSalary()}");
+            Console.WriteLine($"Role: {Role} First name: {FirstName}, Last Name: {LastName}, Salary: {Salary}");
         }
 
-        public Employe()
+        public Employe(string firstName, string lastName, Role role, double salary)
         {
-
-        }
-
-        public Employe(double salary, Role role)
-        {
-            Salary = salary;
+            FirstName = firstName;
+            LastName = lastName;
             Role = role;
+            Salary = salary;
         }
-
         public virtual double GetSalary()
         {
             return Salary;
