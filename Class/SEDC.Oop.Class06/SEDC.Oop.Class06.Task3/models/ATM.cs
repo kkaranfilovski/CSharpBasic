@@ -11,9 +11,9 @@ namespace SEDC.Oop.Class06.Task3.models
         public void Main()
         {
             User[] users = new User[] {
-                new User("kristijan", "1111", 1234, 1000),
-                new User("ilija", "2222", 5555, 500),
-                new User("petko", "3333", 6666, 200)
+                new User("kristijan", 1234123412341234, 1234, 1000),
+                new User("ilija", 4321432143214321, 5555, 500),
+                new User("petko", 1111222233334444, 6666, 200)
             };
 
             StartMenu(users);
@@ -85,6 +85,7 @@ namespace SEDC.Oop.Class06.Task3.models
                     Console.WriteLine("Invalid choice");
                     continue;
                 }
+
                 Console.WriteLine("Do you want to continue using the app ? Enter '1' to continue or press any other key to exit..");
                 string selection = Console.ReadLine();
 
