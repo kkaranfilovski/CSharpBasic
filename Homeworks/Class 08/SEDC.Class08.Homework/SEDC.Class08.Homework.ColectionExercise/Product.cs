@@ -1,6 +1,6 @@
-﻿namespace SEDC.Oop.Class08.Exercises3
+﻿namespace SEDC.Class08.Homework.ColectionExercise
 {
-    internal class Product
+    public class Product
     {
         public Product()
         {

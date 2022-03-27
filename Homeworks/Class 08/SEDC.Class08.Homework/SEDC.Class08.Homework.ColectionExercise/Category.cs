@@ -1,4 +1,4 @@
-﻿namespace SEDC.Oop.Class08.Exercises3
+﻿namespace SEDC.Class08.Homework.ColectionExercise
 {
     public enum Category
     {
