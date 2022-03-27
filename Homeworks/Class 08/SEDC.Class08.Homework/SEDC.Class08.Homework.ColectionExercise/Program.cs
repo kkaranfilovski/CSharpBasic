@@ -70,7 +70,7 @@ namespace SEDC.Class08.Homework.ColectionExercise
             //services.ItterateArray(task8);
             //Console.WriteLine("=======================================================");
 
-            List<Product> task9 = services.RemoveProduct(products, "mouse");
+            List<Product> task9 = services.RemoveProduct(products, "gaming");
             services.ItterateArray(task9);
             Console.WriteLine("=======================================================");
         }

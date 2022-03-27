@@ -150,14 +150,15 @@ namespace SEDC.Class08.Homework.ColectionExercise
 
         public List<Product> RemoveProduct(List<Product> list, string name)
         {
+            //for(int i = 0; i < list.Count; i++)
+            //{
+            //    if (list[i].Name.ToLower().Contains(name.ToLower()))
+            //    {
+            //        list.Remove(list[i]);
+            //    }
 
-            for(int i = 0; i < list.Count; i++)
-            {
-                if (list[i].Name.ToLower().Contains(name.ToLower()))
-                {
-                    list.Remove(list[i]);
-                }
-            }
+            //}
+            list.RemoveAll((product) => product.Name.ToLower().Contains(name));
 
             return list;
         }
