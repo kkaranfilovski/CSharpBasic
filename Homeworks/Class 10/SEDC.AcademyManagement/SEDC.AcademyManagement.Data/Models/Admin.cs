@@ -8,10 +8,11 @@ namespace SEDC.AcademyManagement.Data.Models
 {
     public class Admin : User
     {
+        public bool IsLoggedIn { get; set; }
         public Admin(int id, string fullName, string userName, string password)
             : base(id, fullName, userName, password, Roles.Admin)
         {
-
+            IsLoggedIn = false;
         }
     }
 }

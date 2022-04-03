@@ -10,13 +10,46 @@ namespace SEDC.AcademyManagement.Data.Models
     {
         public Subject CurrentSubject { get; set; }
         public List<Subject> FinishedSubjects { get; set; }
-        public Dictionary<Subject, int> Grades { get; set; }
+        public Dictionary<string, int> Grades { get; set; }
 
-        public Student(int id, string fullName, string userName, string password)
-            :base(id, fullName, userName, password, Roles.Student)
+        public Student(int id, string fullName, string userName, string password, Subject newSubject, List<Subject> finishedSubjects)
+            : base(id, fullName, userName, password, Roles.Student)
         {
-            // logika za predmeti..
+            if (CurrentSubject == null)
+            {
+                CurrentSubject = newSubject;
+                CurrentSubject.IsActive = true;
+            }
+            else if (CurrentSubject != newSubject)
+            {
+                FinishedSubjects.Add(CurrentSubject);
+                CurrentSubject = newSubject;
+                CurrentSubject.IsActive = true;
+            }
+            else
+            {
+                throw new Exception("Already have that subject as your current subject");
+            }
+
+            FinishedSubjects = AddSubjects(finishedSubjects);
         }
 
+        public List<Subject> AddSubjects(List<Subject> subjects)
+        {
+            List<Subject> finishedSubjects = new List<Subject>();
+            for (int i = 0; i < subjects.Count; i++)
+            {
+                if (CurrentSubject == subjects[i])
+                {
+                    break;
+                }
+                else
+                {
+                    subjects[i].IsActive = false;
+                    finishedSubjects.Add(subjects[i]);
+                }
+            }
+            return finishedSubjects;
+        }     
     }
 }
